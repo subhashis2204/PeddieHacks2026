@@ -25,6 +25,15 @@ const Navbar = () => {
         >
           Analysis Report
         </NavLink>
+
+        <NavLink
+          to="/report"
+          className={({ isActive }) =>
+            isActive ? linkStyleActive : linkStyleInactive
+          }
+        >
+          Weekly Report
+        </NavLink>
       </section>
       <Link
         to="/profile"

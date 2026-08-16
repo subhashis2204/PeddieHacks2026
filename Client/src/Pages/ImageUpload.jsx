@@ -77,15 +77,15 @@ function UploadPage({ response, setResponse }) {
   return (
     <>
       <Navbar />
-      <Canvas>
+      <Canvas bgColor="bg-orange-50">
         {/* <Heading className="text-center px-2 pb-8 pt-8">Upload Your Image Files</Heading> */}
         <form
           onSubmit={handleSubmit}
-          className="bg-white rounded-xl mx-auto my-3 w-4/5 min-h-[80vh] max-w-[27rem] flex flex-col p-5 gap-4"
+          className="rounded-xl mx-auto my-3 w-4/5 min-h-[80vh] max-w-[27rem] flex flex-col p-5 gap-4 bg-orange-50"
         >
           <h1
             htmlFor="title"
-            className="text-center capitalize font-bold text-lg"
+            className="text-center capitalize font-bold text-lg "
           >
             Upload the ingredient image
           </h1>
@@ -95,13 +95,26 @@ function UploadPage({ response, setResponse }) {
             name="files"
             onChange={(e) => setFiles(e.target.files)}
             multiple
+            accept=".png,.jpeg,.jpg"
             className="hidden"
           />
           <label
             htmlFor="upload"
-            className="grow border-2 border-uploadBorder border-opacity-30 border-dashed flex flex-col items-center justify-center rounded-md box-border bg-uploadBg"
+            className="
+    grow
+    border-2
+    border-dashed
+    border-yellow-600
+    border-opacity-70
+    flex flex-col
+    items-center
+    justify-center
+    rounded-md
+    box-border
+    bg-orange-50
+  "
           >
-            <div className="flex flex-col items-center justify-center gap-4 p-3">
+            <div className="flex grow flex-col items-center justify-center gap-4 p-3">
               <img src={upload} alt="" className="w-16" />
               <p className="text-md font-bold">
                 drag & drop files or{" "}

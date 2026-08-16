@@ -118,9 +118,9 @@ function ProfilePage() {
   return (
     <>
       <Navbar />
-      <Canvas bgColor="bg-blue-100">
+      <Canvas bgColor="bg-orange-50">
         <section className="relative flex flex-col items-center">
-          <MdAccountCircle className="text-8xl text-blue-800" />
+          <MdAccountCircle className="text-8xl text-yellow-800" />
           <p className="capitalize text-xl font-bold">Subhashis Paul</p>
           <section className="flex gap-2 absolute right-0 top-0 mt-5">
             <CustomButton
